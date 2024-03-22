@@ -1,0 +1,17 @@
+# Run only once
+    docker pull mysql
+
+# Run to create a new container
+    docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=1234 -d mysql:latest 
+
+# Run to connect to cmd
+    docker exec -it mysql bash
+
+# Run to connect to mysql in cmd
+    mysql -u root -p
+
+# compile the project
+    javac -d bin src/*.java
+
+# execute the project
+    java -cp "./bin;E:\gpp\JP2\MicroProject\bin\mysql-connector-j-8.3.0.jar" Attendanceproj
